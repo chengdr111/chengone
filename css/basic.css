@@ -1,0 +1,122 @@
+﻿@charset "utf-8";
+/* CSS Document */
+body { padding: 0px; margin: 0px;
+    font-family: "微软雅黑", Verdana, Geneva, sans-serif; font-size: 14px; color: #333; }
+ul, li, dl, dt, dd, p, h1, h2, h3, h4, h5, input, form, span, img, ol, button, table, tr, td, select, option, textarea, div { margin: 0px; padding: 0px; list-style: none; outline: none; border: 0; }
+li{list-style: none;}
+img {border: none;vertical-align:top;}
+table{border-collapse:collapse;}
+
+a,button,input,textarea,select{ background: none; -webkit-tap-highlight-color:rgba(255,0,0,0); outline:none; -webkit-appearance:none;}
+textarea{resize:none; overflow:auto;}
+input {font-family: "微软雅黑", Arial, Helvetica, sans-serif;}
+/* 禁止换行,超出省略号 */
+.noWrapEllipsis{ white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+a {text-decoration: none;}
+/* 文字两端对齐 */
+.text-justify{text-align:justify; text-justify:inter-ideograph;}
+
+/* 定义盒模型为 flex布局兼容写法并让内容水平垂直居中 */
+.flex-center{
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -o-box;
+	display: box;
+
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    -o-box-pack: center;
+    box-pack: center;
+
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    -o-box-align: center;
+    box-align: center;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.tac { text-align: center; }
+.clear{
+    clear:both;
+    font-size:0;
+    height:0;
+    line-height:0;
+}
+/****header头部开始*****/
+.header{
+    width: 100%;
+    height: 80px;
+    background-color: #ffffff;
+
+}
+.headIn {
+    width: 1044px;
+    margin: 0 auto;
+    z-index: 1000;
+}
+.headIn>h1>a {
+    width: 200px;
+    height: 80px;
+    float: left;
+}
+.head_center {
+    float: left;
+    height: 80px;
+    line-height: 80px;
+    margin-left: 104px;
+}
+.head_center li {
+    float: left;
+}
+.head_center li a{
+    color: #373737;
+    font-size: 18px;
+    padding: 0 20px;
+}
+.head_center li:hover a{
+    color: #5aa8fa;
+}
+.head_center li a.hoverli{
+    color: #5aa8fa;
+}
+.head_rig{
+    width: 88px;
+    height: 80px;
+    float: right;
+    background: url(../images/haealink.png) center center no-repeat #0376D8;
+    text-align: center;
+}
+.head_rig li{
+    height: 40px;
+    line-height: 40px;
+}
+.head_rig li a {
+    font-size: 16px;
+    color: #ffffff;
+}
+/****header头部结束*****/
+
+/*******footer尾部开始***************/
+
+/*底部开始*/
+.footer{
+    width: 100%;
+    background-color: #333333;
+    margin-top: 60px;
+}
+.footer_main {
+    width: 1044px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0 0 50px 0;
+}
+
+/*底部结束*/
+/*******footer尾部结束***************/
